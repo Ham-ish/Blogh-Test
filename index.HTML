@@ -7,11 +7,73 @@
     <meta name="keywords" content="Keywords related to your website">
     <meta name="author" content="Your name">
     <title>My Cool Blog</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <style>
+      * {
+        font-family: 'Titillium Web', sans-serif;
+        text-align: center;
+      }
+
+      body {
+        background-color: #2196F3;
+      }
+
+      header,
+      main,
+      footer {
+        display: block;
+        margin: 0 auto;
+        max-width: 800px;
+        padding: 1em;
+      }
+
+      h1 {
+        font-size: 3em;
+        margin-bottom: 0.5em;
+      }
+
+      nav {
+        margin-top: 0.5em;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+      }
+
+      nav li {
+        display: inline-block;
+        margin: 0 1em;
+      }
+
+      section {
+        margin-top: 2em;
+      }
+
+      form {
+        display: inline-block;
+      }
+
+      label,
+      input,
+      textarea {
+        display: block;
+        margin: 0.5em auto;
+        width: 50%;
+      }
+
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 1em;
+        border: none;
+        margin-top: 1em;
+        width: 20%;
+      }
+    </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/accessible-autocomplete@2.7.0/dist/accessible-autocomplete.min.css">
-  <head>
-    <meta charset="UTF-8">
-    <title>My Cool Blog</title>
   </head>
   <body>
     <header>
@@ -33,25 +95,4 @@
         <h2>Recent Posts</h2>
         <ul>
           <li><a href="#post1">Post 1</a></li>
-          <li><a href="#post2">Post 2</a></li>
-          <li><a href="#post3">Post 3</a></li>
-        </ul>
-      </section>
-      <section id="contact">
-        <h2>Get In Touch</h2>
-        <form action="submit-form.php" method="post">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name"><br><br>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email"><br><br>
-          <label for="message">Message:</label>
-          <textarea id="message" name="message"></textarea><br><br>
-          <input type="submit" value="Submit">
-        </form>
-      </section>
-    </main>
-    <footer>
-      <p>Copyright © 2023 My Cool Blog</p>
-    </footer>
-  </body>
-</html>
+          <li><a href="#post
