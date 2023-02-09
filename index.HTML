@@ -50,6 +50,7 @@
 
       section {
         margin-top: 2em;
+        display: none;
       }
 
       form {
@@ -72,15 +73,6 @@
         margin-top: 1em;
         width: 20%;
       }
-
-      .section-title {
-        background-color: #333;
-        color: #fff;
-        padding: 1em;
-        text-align: left;
-        margin: 0;
-        width: 100%;
-      }
     </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/accessible-autocomplete@2.7.0/dist/accessible-autocomplete.min.css">
   </head>
@@ -89,36 +81,48 @@
       <h1>My Cool Blog</h1>
       <nav>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#posts">Posts</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" onclick="showSection('about')">About</a></li>
+          <li><a href="#" onclick="showSection('posts')">Posts</a></li>
+          <li><a href="#" onclick="showSection('contact')">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section id="about">
-        <h2 class="section-title">About Me</h2>
+        <h2>About Me</h2>
         <p>Learn more about the author of this blog.</p>
-      </
-        <section id="posts">
-          <h2 class="section-title">Posts</h2>
-          <p>Check out the latest posts from this blog.</p>
-        </section>
-        <section id="contact">
-          <h2 class="section-title">Contact</h2>
-          <form action="submit-form.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <input type="submit" value="Submit">
-          </form>
-        </section>
-      </main>
-      <footer>
-        <p>Copyright &copy; 2023 My Cool Blog</p>
-      </footer>
-    </body>
-  </html>
+      </section>
+      <section id="posts">
+        <h2>Recent
+Posts</h2>
+        <p>Check out the latest posts from this blog.</p>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2023. All rights reserved.</p>
+    </footer>
+    <script>
+      function showSection(sectionId) {
+        const sections = document.querySelectorAll("section");
+        for (const section of sections) {
+          section.style.display = "none";
+        }
+        document.querySelector(`#${sectionId}`).style.display = "block";
+      }
+
+      document.querySelector("#about").style.display = "block";
+    </script>
+  </body>
+</html>
