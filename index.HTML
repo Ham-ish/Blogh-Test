@@ -124,4 +124,27 @@ Posts</h2>
       document.querySelector("#about").style.display = "block";
     </script>
   </body>
+</html>>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2023. All rights reserved.</p>
+    </footer>
+    <script>
+      function showSection(sectionId) {
+        const sections = document.querySelectorAll("section");
+        for (const section of sections) {
+          section.style.display = "none";
+        }
+        document.querySelector(`#${sectionId}`).style.display = "block";
+      }
+
+      document.querySelector("#about").style.display = "block";
+    </script>
+  </body>
 </html>
