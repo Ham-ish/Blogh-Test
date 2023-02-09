@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Blog Post</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: lightblue;
+      }
+
+      header {
+        text-align: center;
+        padding: 20px;
+        background-color: white;
+      }
+
+      main {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        text-align: center;
+      }
+
+      footer {
+        text-align: center;
+        padding: 10px;
+        background-color: white;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Blog Post</h1>
+    </header>
+    <main>
+      <p>Add your blog post content here.</p>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2023. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
